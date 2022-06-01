@@ -16,7 +16,7 @@ if __name__ == '__main__':
 
 @app.route('/RichiArschloch')
 def RichiArschloch():
-    return
+    return render_template('RichiArschloch.html')
 
 @app.route('/')
 def index():
