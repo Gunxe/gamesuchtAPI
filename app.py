@@ -14,18 +14,9 @@ ref = db.collection('test')
 if __name__ == '__main__':
     app.run()
 
-@app.route('/list', methods=['GET'])
-def read():
-    try:
-        id = 'prKMqXODiKGjjRFvlnAC'
-        if id:
-            testt = ref.document(id).get()
-            return jsonify(testt.to_dict()), 200
-    except Exception as e:
-        print("tobonga nö")
-
-
-
+@app.route('/RichiArschloch')
+def RichiArschloch():
+    return
 
 @app.route('/')
 def index():
