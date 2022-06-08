@@ -22,10 +22,10 @@ def RichiArschloch():
 def index():
     return render_template('index.html')
 
-@app.route('/getUmfrage', methods='GET')
+@app.route('/getUmfrage', methods=['GET'])
 def getUmfrage():
     return jsonify(db.getUmfrage('Gamesucht'))
 
 @app.route('/umfrage')
 def umfrage():
-    return 0
+    return render_template('index.html')
